@@ -1,6 +1,6 @@
 let API1 = "https://covid19.mathdro.id/api/countries/indonesia";
-let API2 = "https://covid19.mathdro.id/api/countries";
-let API3 = "https://covid19.mathdro.id/api/daily";
+let API2 = " https://covid19.mathdro.id/api/";
+let API3 = "https://covid19.mathdro.id/api/confirmed";
 
 fetch(API1, {method: "POST"})
 .then(result1 => result1.json())
