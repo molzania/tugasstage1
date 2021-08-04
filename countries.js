@@ -1,15 +1,15 @@
-let API1 = "https://covid19.mathdro.id/api/";
+let API1 = "https://covid19.mathdro.id/api/confirmed";
 
-fetch(API1, {method: "POST"})
+let countriesContainer = document.getElementById("data-container");
+
+fetch(API1, {method: "GET"})
 .then(result => result.json())
 .then(result => {
     console.log(result)
-    for (let b=0;b<=23;b++){
-        countriesContainer.innerHTML += `
-        <div id="flag"> 
-        <img src='${result[b].flag}'/>
-        <span>${result[b].name}</span>
-         </div>` }
+    for (let i=0;i<=10;i++){
+        countriesContainer.innerHTML += `<p>${result[i].countryRegion}</p>`
+
+    }
 })
 .catch(error => {
     console.log(error);
