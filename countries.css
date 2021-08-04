@@ -119,9 +119,17 @@ h3 {
     padding: 10px;
 }
 
-@media (max-width:1057px) {
+@media (max-width:700px) {
     
-    #data-container {
-        width: 80%;
-    }
+  #data-negara {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     text-align: center;
+  }
+
+  form {
+      width:70%;
+    margin: auto;
+  }
 }
