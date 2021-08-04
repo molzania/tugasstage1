@@ -75,19 +75,44 @@ form{
 }
 
 #data-container{
-    border:1px solid black;
     width:1000px;
     height: 800px;
     margin-top: 20px;
     margin-bottom: 20px;
-    overflow: auto; 
+    overflow: auto;
+    justify-self: center;
 }
 
-
+#data-value{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 
 section{
     display: flex;
     flex-direction: column;
 
+
+}
+
+#jumlah{
+    display: flex;
+    flex-direction: row;
+}
+
+#data-negara{
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+#negara{
+    padding: 10px;
 }

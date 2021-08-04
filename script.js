@@ -1,6 +1,5 @@
 let API1 = "https://covid19.mathdro.id/api/countries/indonesia";
-let API2 = "https://covid19.mathdro.id/api/confirmed";
-let API1 = "https://covid19.mathdro.id/api/";
+let API2 = "https://covid19.mathdro.id/api/";
 
 let indonesia = document.getElementById("data-covid-ina");
 let global = document.getElementById("data-covid-dunia");
