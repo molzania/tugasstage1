@@ -24,7 +24,6 @@ fetch(API1, {method: "GET"})
         </div>
         </div>
         `
-
     }
 })
 .catch(error => {

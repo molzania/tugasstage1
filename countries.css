@@ -80,7 +80,7 @@ form{
     margin-top: 20px;
     margin-bottom: 20px;
     overflow: auto;
-    justify-self: center;
+    margin: auto;
 }
 
 #data-value{
@@ -94,7 +94,7 @@ form{
 section{
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
 
 }
 
@@ -115,4 +115,11 @@ h3 {
 
 #negara{
     padding: 10px;
+}
+
+@media (max-width:1057px) {
+    
+    #data-container {
+        width: 80%;
+    }
 }
