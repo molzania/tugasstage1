@@ -1,5 +1,5 @@
 let API1 = "https://covid19.mathdro.id/api/countries/indonesia";
-let API2 = " https://covid19.mathdro.id/api/";
+let API2 = "https://covid19.mathdro.id/api/";
 let API3 = "https://covid19.mathdro.id/api/confirmed";
 
 let indonesia = document.getElementById("data-covid-ina");
@@ -17,13 +17,7 @@ fetch(API1, {method: "POST"})
 fetch(API2, {method: "POST"})
 .then(result2 => result2.json())
 .then(result2 => {
-    console.log(result2)
-        global.innerHTML = `
-        <div id="konfirmasi">
-        <h3>Konfirmasi</h3> 
-        <p src='${result2[0].value}'></p>
-         </div>` 
-})
+    console.log(result2)})
 .catch(error2 => {
     console.log(error2);
 })
