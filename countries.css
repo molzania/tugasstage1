@@ -21,6 +21,7 @@ padding:15px;
 background-color: black;
 color: white;
 text-align: center;
+margin-top: 50px;
 }
 
 .topnav {
@@ -72,6 +73,7 @@ form{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 #data-container{
