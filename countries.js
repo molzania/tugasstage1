@@ -36,12 +36,12 @@ let Cari = document.getElementById("cari");
 Cari.onclick = searchByName;
 
 function searchByName() {
+    let regex = new RegExp(textInput);
     let display = document.getElementById("data-container");
     let textInput = document.getElementById("search").value;
     display.innerHTML = "";
 
     for(let a=0;a<=180;a++){
-        let regex = new RegExp(textInput);
       if(regex.test(result[a]){
         display.innerHTML += `
         <h3>${result[a].countryRegion}</h3>
@@ -59,7 +59,6 @@ function searchByName() {
         <p>${result[a].deaths}</p>
         </div>
         </div>
-        `} 
-    }}
+        `})
 return false;
-      }
+}}
