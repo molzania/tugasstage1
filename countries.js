@@ -45,16 +45,16 @@ function searchByName(){
       if(regex.test(`${result[i].countryRegion}`)){
         display.innerHTML += `
         <h3>${result[i].countryRegion}</h3>
-        <div id="data-negara">
-        <div id="konfirmasi">
+        <div id="data-negara-2">
+        <div id="konfirmasi-2">
         <h4>Konfirmasi</h4>
         <p>${result[i].confirmed}</p>
         </div>
-        <div id="sembuh">
+        <div id="sembuh-2">
         <h4>Sembuh</h4>
         <p>${result[i].recovered}</p>
         </div>
-        <div id="meninggal">
+        <div id="meninggal-2">
         <h4>Meninggal</h4>
         <p>${result[i].deaths}</p>
         </div>
