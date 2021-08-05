@@ -59,6 +59,6 @@ function searchByName() {
         <p>${result[a].deaths}</p>
         </div>
         </div>
-        `})
+        `}
 return false;
-}}
+      }}
