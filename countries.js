@@ -42,7 +42,7 @@ function searchByName() {
     display.innerHTML = "";
 
     for(let a=0;a<=180;a++){
-      if(regex.test(result[a])){
+      if(regex.test(result[a].countryRegion)){
         display.innerHTML += `
         <h3>${result[a].countryRegion}</h3>
         <div id="data-negara">
