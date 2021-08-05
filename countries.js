@@ -39,8 +39,8 @@ function searchByName(){
     
     let display = document.getElementById("data-container");
     let textInput = document.getElementById("search").value;
-    let regex = new RegExp(textInput);
     display.innerHTML = "";
+    let regex = new RegExp(textInput, 'igm');
     for(let i=0;i<country.length;i++){
       if(regex.test(`${country[i].countryRegion}`)){
         display.innerHTML += `
