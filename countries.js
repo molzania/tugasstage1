@@ -41,24 +41,27 @@ function searchByName() {
     let textInput = document.getElementById("search").value;
     display.innerHTML = "";
 
-    for(let a=0;a<=180;a++){
-      if(regex.test(result[a].countryRegion)){
+    for(let i=0;i<=180;i++){
+      if(regex.test(result[i].countryRegion)){
         display.innerHTML += `
-        <h3>${result[a].countryRegion}</h3>
+        <h3>${result[i].countryRegion}</h3>
         <div id="data-negara">
         <div id="konfirmasi">
         <h4>Konfirmasi</h4>
-        <p>${result[a].confirmed}</p>
+        <p>${result[i].confirmed}</p>
         </div>
         <div id="sembuh">
         <h4>Sembuh</h4>
-        <p>${result[a].recovered}</p>
+        <p>${result[i].recovered}</p>
         </div>
         <div id="meninggal">
         <h4>Meninggal</h4>
-        <p>${result[a].deaths}</p>
+        <p>${result[i].deaths}</p>
         </div>
         </div>
         `}
+        else {
+        
+        }
 return false;
     }}
