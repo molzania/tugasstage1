@@ -59,6 +59,11 @@ function searchByName(){
         <p>${result[i].deaths}</p>
         </div>
         </div>
-        `}
+        `}else{
+            display.innerHTML = `<div id="error">
+            <img src="./img/error.png">
+            <p>Maaf, data tidak ditemukan.</p>
+            </div>`
+        }
 return false;
     }}
