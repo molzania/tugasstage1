@@ -42,7 +42,7 @@ function searchByName() {
     display.innerHTML = "";
 
     for(let a=0;a<=180;a++){
-        let regex = new RegExp(textInput)
+        let regex = new RegExp(textInput);
       if(regex.test(result[a]){
         display.innerHTML += `
         <h3>${result[a].countryRegion}</h3>
