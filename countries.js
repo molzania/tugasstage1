@@ -41,7 +41,7 @@ function searchByName(){
     let textInput = document.getElementById("search").value;
     let regex = new RegExp(textInput);
     display.innerHTML = "";
-    for(let i=0;i<=180;i++){
+    for(let i=0;i<country.length;i++){
       if(regex.test(`${country[i].countryRegion}`)){
         display.innerHTML += `
         <h3>${country[i].countryRegion}</h3>
@@ -60,5 +60,6 @@ function searchByName(){
         </div>
         </div>
         `}
-return false;
-    }}
+    }
+    return false;
+}
