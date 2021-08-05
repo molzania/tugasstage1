@@ -35,14 +35,14 @@ fetch(API1, {method: "GET"})
 let Cari = document.getElementById("cari");
 Cari.onclick = searchByName;
 
-function searchByName() {
-    let regex = new RegExp(textInput);
+function searchByName(){
+    
     let display = document.getElementById("data-container");
     let textInput = document.getElementById("search").value;
+    let regex = new RegExp(textInput);
     display.innerHTML = "";
-
     for(let i=0;i<=180;i++){
-      if(regex.test(result[i].countryRegion)){
+      if(regex.test(`${result[i].countryRegion}`)){
         display.innerHTML += `
         <h3>${result[i].countryRegion}</h3>
         <div id="data-negara">
@@ -60,8 +60,5 @@ function searchByName() {
         </div>
         </div>
         `}
-        else {
-        
-        }
 return false;
     }}
