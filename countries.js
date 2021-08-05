@@ -37,16 +37,13 @@ Cari.onclick = searchByName;
 
 function searchByName() {
 
-    let regex2=/^[A-Za-z0-9_.]+$/
     let textInput = document.getElementById("search").value;
     let display = document.getElementById("data-container");
     display.innerHTML = "";
 
     for(let a=0;a<=180;a++){
-    
-      regex2.test(textInput);
-      display.some(item => textInput.includes(item));
-      if(true){
+        let regex = new RegExp(textInput)
+      if(regex.test(result[a]){
         display.innerHTML += `
         <h3>${result[a].countryRegion}</h3>
         <div id="data-negara">
@@ -63,10 +60,8 @@ function searchByName() {
         <p>${result[a].deaths}</p>
         </div>
         </div>
-        `
-    } 
-
-   }
+        `}
+    }
 return false;
-
-}
+      }
+    }
