@@ -33,12 +33,13 @@ fetch(API1, {method: "GET"})
 function searchByName() {
     let regex2=/^[A-Za-z0-9_.]+$/
     textInput = document.getElementById("search").value;
+    display = document.getElementById("data-container");
 
     for(let i=0;i<=180;i++){
         result[i].countryRegion;
         regex2.test(textInput);
         if(true){
-            
+            display.innerHTML = regex.test(textInput)
         }
     }
 }
