@@ -38,14 +38,14 @@ Cari.onclick = searchByName;
 function searchByName() {
 
     let regex2=/^[A-Za-z0-9_.]+$/
-    textInput = document.getElementById("search").value;
-    display = document.getElementById("data-container");
+    let textInput = document.getElementById("search").value;
+    let display = document.getElementById("data-container");
     display.innerHTML = "";
 
     for(let a=0;a<=180;a++){
     
       regex2.test(textInput);
-      
+      display.some(item => textInput.includes(item));
       if(true){
         display.innerHTML += `
         <h3>${result[a].countryRegion}</h3>
@@ -64,7 +64,8 @@ function searchByName() {
         </div>
         </div>
         `
-    }
+    } 
+
    }
 return false;
 
