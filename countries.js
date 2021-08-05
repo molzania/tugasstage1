@@ -42,28 +42,23 @@ function searchByName(){
     let regex = new RegExp(textInput);
     display.innerHTML = "";
     for(let i=0;i<=180;i++){
-      if(regex.test(`${result[i].countryRegion}`)){
+      if(regex.test(`${country.countryRegion}`)){
         display.innerHTML += `
-        <h3>${result[i].countryRegion}</h3>
+        <h3>${country.countryRegion}</h3>
         <div id="data-negara">
         <div id="konfirmasi">
         <h4>Konfirmasi</h4>
-        <p>${result[i].confirmed}</p>
+        <p>${country.confirmed}</p>
         </div>
         <div id="sembuh">
         <h4>Sembuh</h4>
-        <p>${result[i].recovered}</p>
+        <p>${country.recovered}</p>
         </div>
         <div id="meninggal">
         <h4>Meninggal</h4>
-        <p>${result[i].deaths}</p>
+        <p>${country.deaths}</p>
         </div>
         </div>
-        `}else{
-            display.innerHTML = `<div id="error">
-            <img src="./img/error.png">
-            <p>Maaf, data tidak ditemukan.</p>
-            </div>`
-        }
+        `}
 return false;
     }}
