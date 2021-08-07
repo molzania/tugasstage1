@@ -97,7 +97,7 @@ function searchByName(event) {
       alert('Data tidak ditemukan. Coba lagi.');
       display.innerHTML = `<div id="Error">
       <img src="./img/error.png">
-      <p>Maaf data tidak ditemukan.</p>
+      <p>Maaf, data tidak ditemukan.</p>
       </div>`
     }
   }
