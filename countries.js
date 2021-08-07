@@ -59,7 +59,7 @@ function searchByName(){
         <p>${country[i].deaths}</p>
         </div>
         </div>
-        `} 
+        `}
     }
     return false;
 }
