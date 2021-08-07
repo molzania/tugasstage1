@@ -72,7 +72,6 @@ function searchByName(event) {
     
     for(let i=0; i < country.length; i++){
       if (country[i].countryRegion.toLowerCase().includes(textInput.toLowerCase())) {
-        console.log('test');
         display.innerHTML += `
           <h3>${country[i].countryRegion}</h3>
           <div id="data-negara">
