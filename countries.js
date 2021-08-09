@@ -63,15 +63,17 @@ Cari.onclick = searchByName;
 //     }
 //     return false;
 // }
+//
 
 function searchByName(event) {
     event.preventDefault();
     let display = document.getElementById("data-container");
     let textInput = document.getElementById("search").value;
+    let regex2 = RegExp(`${textInput}`, 'ig');
     display.innerHTML = "";
     
     for(let i=0; i < country.length; i++){
-      if (country[i].countryRegion.toLowerCase().includes(textInput.toLowerCase())) {
+      if (regex2.test(`${country[i].countryRegion}`)) {
         display.innerHTML += `
           <h3>${country[i].countryRegion}</h3>
           <div id="data-negara">
